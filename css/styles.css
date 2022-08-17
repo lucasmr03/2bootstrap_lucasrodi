@@ -1,0 +1,31 @@
+/*RESETEO*/
+*{
+    margin:0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main{
+    background-image:url(../assets/img/imagenfondo.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+h1{
+    color: orangered;
+    font-weight: bold;
+
+}
+h2{
+    color: red;
+    font-weight: bold;
+
+}
+
+li{
+    color:red;
+}
+strong{
+    color:red; 
+}
+.container{
+    border: 5px outset }
+
