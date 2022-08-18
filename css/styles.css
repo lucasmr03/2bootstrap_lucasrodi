@@ -24,8 +24,31 @@ li{
     color:red;
 }
 strong{
-    color:red; 
+    color:green; 
 }
 .container{
     border: 5px outset }
+h1{
+    animation: pulso 3s infinite;
+}
+/*KEYFRAME h1*/
 
+@keyframes pulso{
+    0%{
+        transform: scale(.7);
+        box-shadow: 0,0,0,0
+    }
+    30%{
+        transform: scale(.8);
+        box-shadow:0,0,0,0;
+    }
+    70%{
+        transform: scale(.9);
+        box-shadow:0,0,0,0;
+    }
+    100%{
+        transform: scale(1);
+        box-shadow: 0,0,0,0;
+
+    }
+}
