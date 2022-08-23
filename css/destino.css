@@ -1,26 +1,83 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav ul {
-  background-color: black;
-}
-nav ul li {
-  background-color: red;
-}
-
-/*Fondo de main*/
+/*FONDO de MAIN*/
 main {
   background-image: url(../assets/img/imagenfondo.jpg);
   background-repeat: repeat;
   background-size: cover;
 }
 
+/*ESTILOS*/
+h1 {
+  color: rgb(45, 170, 45);
+}
+
+h2 {
+  color: rgb(255, 4, 104);
+  font-weight: bold;
+}
+
+li {
+  color: rgb(45, 170, 45);
+  font-weight: bold;
+}
+
+strong {
+  color: red;
+}
+
+/*modificando clase de bootstrap*/
+.container {
+  border: 2px outset;
+}
+
+nav ul {
+  background-color: black;
+}
+nav ul li {
+  background-color: rgb(234, 100, 171);
+  opacity: 10px;
+}
+nav ul li:hover {
+  background-color: white;
+}
+
 /*agregando estilos a footer*/
 footer p {
   color: red;
+}
+footer p a {
+  color: green;
+  text-decoration: none;
+}
+
+/*Agregando animacion a los h1*/
+h1 {
+  animation: pulso 3s infinite;
+}
+
+@keyframes pulso {
+  0% {
+    transform: scale(0.7);
+    box-shadow: 0, 0, 0, 0;
+  }
+  30% {
+    transform: scale(0.8);
+    box-shadow: 0, 0, 0, 0;
+  }
+  70% {
+    transform: scale(0.9);
+    box-shadow: 0, 0, 0, 0;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0, 0, 0, 0;
+  }
 }
 
 /*# sourceMappingURL=destino.css.map */
