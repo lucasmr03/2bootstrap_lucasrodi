@@ -5,6 +5,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/*variables*/
 /*FONDO de MAIN*/
 main {
   background-image: url(../assets/img/imagenfondo.jpg);
@@ -36,15 +37,13 @@ strong {
   border: 2px outset;
 }
 
-nav ul {
-  background-color: black;
-}
 nav ul li {
   background-color: rgb(234, 100, 171);
-  opacity: 10px;
+  padding: 10px;
+  margin: 4px;
 }
 nav ul li:hover {
-  background-color: white;
+  background-color: rgb(45, 170, 45);
 }
 
 /*agregando estilos a footer*/
