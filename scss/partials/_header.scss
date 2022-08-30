@@ -1,15 +1,17 @@
+@import 'mixins';
+/*AGREGANDO MIXIN A NAV*/
 nav{
-    ul{
-        
+    ul{ 
         li{
-            background-color: rgb(234, 100, 171);
+
+            @include border-radio;
+            background-color: $principal;
             padding:10px;
             margin:4px ;
         }
         li:hover{
-            background-color: $colorH1;
-
-            }
-
+            background-color: $titulo;
         }
+        
     }
+}

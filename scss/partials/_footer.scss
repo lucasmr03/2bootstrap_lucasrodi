@@ -1,10 +1,11 @@
-/*agregando estilos a footer*/
+/*ESTILO DE FOOTER*/
 footer{
     p{
-        color: red;
-    a{
-        color: green;
+        color: $resaltado;
+      a{
+        color: $titulo;
         text-decoration: none;
-    }
+        font-weight:bold;
+       }
     }
 }

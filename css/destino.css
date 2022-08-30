@@ -5,7 +5,28 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/*variables*/
+/*COLORES PRINCIPALES*/
+/*AGREGANDO MIXIN A NAV*/
+nav ul li {
+  border-radius: 30px;
+  background-color: rgb(255, 4, 104);
+  padding: 10px;
+  margin: 4px;
+}
+nav ul li:hover {
+  background-color: rgb(45, 170, 45);
+}
+
+/*ESTILO DE FOOTER*/
+footer p {
+  color: red;
+}
+footer p a {
+  color: rgb(45, 170, 45);
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /*FONDO de MAIN*/
 main {
   background-image: url(../assets/img/imagenfondo.jpg);
@@ -32,30 +53,25 @@ strong {
   color: red;
 }
 
-/*modificando clase de bootstrap*/
-.container {
-  border: 2px outset;
+/*APLICANDO EXTEND DE BOTONES*/
+.btn, .btn-design, .btn-compra {
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
 }
 
-nav ul li {
-  background-color: rgb(234, 100, 171);
-  padding: 10px;
-  margin: 4px;
-}
-nav ul li:hover {
+.btn-compra {
+  border-radius: 30px;
   background-color: rgb(45, 170, 45);
 }
 
-/*agregando estilos a footer*/
-footer p {
-  color: red;
-}
-footer p a {
-  color: green;
-  text-decoration: none;
+.btn-design {
+  border-radius: 30px;
+  background-color: rgb(255, 4, 104);
 }
 
-/*Agregando animacion a los h1*/
+/*APLICANDO ANIMACION TODOS LOS H1*/
 h1 {
   animation: pulso 3s infinite;
 }

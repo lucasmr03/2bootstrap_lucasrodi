@@ -1,6 +1,4 @@
-/*variables*/
-@import 'colores';
-
+@import'mixins';
 /*FONDO de MAIN*/
 main{
     background-image:url(../assets/img/imagenfondo.jpg);
@@ -9,19 +7,36 @@ main{
 }
 /*ESTILOS*/
 h1{
-    color: $colorH1;
+    color: $titulo;
 }
 h2{
-    color: $colorTitulos;
+    color: $principal;
     font-weight: bold;
 } 
 li{
-    color: rgb(45, 170, 45);
+    color: $titulo;
     font-weight: bold;
 }
 strong{
-    color: red;
+    color: $resaltado;
 }
-/*modificando clase de bootstrap*/
-.container{
-    border: 2px outset }
+
+/*APLICANDO EXTEND DE BOTONES*/
+.btn{
+    @include border-radio;
+    text-decoration:none;
+    color:white;
+    padding: 10px;
+    
+}
+.btn-compra{
+    @extend .btn;
+    @include border-radio;
+    background-color: $titulo;
+}
+.btn-design{
+    @extend .btn;
+    @include border-radio;
+    background-color: $principal;
+}
+
